@@ -1,0 +1,41 @@
+Used 2 different models: 
+    1) LSTM Model, trained using a dataset of roughly 10k article titles
+    2) GPT-2 finetuned model, using the same dataset of roughly 10k article titles
+All articles used were under the "news" category. 
+
+The test/development? corpus was size 1611 for the LSTM model, but only size 20 for the GPT-2 model, due to hardware and time-constraints.
+
+The keywords of the testing corpus were extracted using the YAKE! library, because its light-weight, simple to use, and its benchmark tests showed it can outperform other state-of-the art methods.
+
+If time permits, maybe another method of keyword extraction will be implemented, or a better set of stop words (beyond a generic list from nltk).
+
+The top 5 keywords/phrases were extracted.
+
+First limiting the size of the word/phrase to 1, so only a single word.
+Then, limiting the size of the phrase to 3, so up to three words could be considered 'key'.
+Then finally, limiting the size of the phrase to 5, so up to five words could be considered 'key'.
+
+Afterwards, these keyword/phrases were inputted into both models.
+Again, the LSTM model received all 5 keywords, of all 1611 titles (i.e. generated a total of 8055 titles)
+The GPT-2 model only received 3 keywords, from 20 titles (due to time and hardware constraints, generating a total of 60 titles)
+
+These titles were then compared to the original articles title, using cosine similarity (from sklearn), and the results are below:
+
+LSTM Model:
+yake-1-keyword : 0.06385564597491072
+yake-3-keyword : 0.06427950108759217
+yake-5-keyword : 0.06427181437205604
+
+Best result (6.43% similar.. )
+
+GPT-2 Model:
+yake-1-keyword : 0.045118583378910664
+yake-3-keyword : 0.03172485258032359
+yake-5-keyword : 0.06005158784842297
+
+Best result (6.01% similar.. )
+
+GPT-2 excelled with a larger limit on the keyword/phrase, nearly 50% increase of single keyword, and nearly double that of the 3 keyword.
+LSTM had nearly the same results across the board, however surprisingly yake-3-keyword performed the best.
+
+I would imagine that yake-5-keyword would stay the best for GPT-2, and would outperform yake-3-keyword for the LSTM Model, with some improvements to the keyword extraction, as well as our stop word list.
