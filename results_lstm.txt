@@ -1,0 +1,6 @@
+yake1 : 0.06385564597491072
+yake1 best cosine: 0.49630705945783515, index: 739, result: 0
+yake3 : 0.06427950108759217
+yake3 best cosine: 0.5448954693228305, index: 1942, result: 2
+yake5 : 0.06427181437205604
+yake5 best cosine: 0.49958147679900644, index: 813, result: 4

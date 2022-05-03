@@ -10,15 +10,20 @@ import ijson
 tfidf_vectorizer = TfidfVectorizer(analyzer="word")
 datafiles = ['yake1', 'yake3', 'yake5']
 
-output_file = open('results.txt', 'w', encoding='utf-8')
+output_file = open('results_gpt2.txt', 'w', encoding='utf-8')
 
 for datafile in datafiles:
     total = 0
     i = 0
-
+    best_index = 0
+    best_cosine = 0
+    best_result = i
     with open('data/test_titles.json') as json_file:
         key = json.load(json_file)
-        k = dict(list(key.items())[:20])
+        if datafile == 'yake5':
+            k = dict(list(key.items())[:20])
+        else:
+            k = dict(list(key.items()))
         with open(f'gpt2data/{datafile}_output.csv', 'r', encoding='utf-8') as f:
             data = f.readlines()
             for line in data:
@@ -31,9 +36,15 @@ for datafile in datafiles:
                 cosine = cosine_similarity(sparse_matrix[0,:],sparse_matrix[1:,:])
                 i += len(string_list)
                 for result in cosine:
-                    for nested in result:
+                    for j in range(len(result)):
+                        nested = result[j]
+                        if best_cosine < nested:
+                            best_cosine = nested
+                            best_index = index
+                            best_result = j
                         total += nested
-    
+                        
     average_cosine = total/i
     print(f'Average cosine for {datafile}: {average_cosine}')
     output_file.write(f'{datafile} : {average_cosine}\n')
+    output_file.write(f'{datafile} best cosine: {best_cosine}, index: {best_index}, result: {best_result}\n')
