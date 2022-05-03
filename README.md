@@ -51,18 +51,27 @@ Best result (54% similar)
 
 GPT-2 Model:
 - yake1 : 0.045118583378910664
+
   yake1 best cosine: 0.18817272215521147, index: 165, result: 1
+
   Generated: 1) Cnn'It Is A Warzone,' Says Migrant 2) Russian Agreement Puts Ukraine In Eu 'Black Hole'
+
   Actual: 'Help us, we're stranded': International students say they're trapped in northeast Ukraine
 
 - yake3 : 0.03172485258032359
+
   yake3 best cosine: 0.31745314091816873, index: 73, result: 1
+
   Generated: Russia Invades Ukraine To 'Hijack' Key Institutions
+
   Actual: Kenya's UN ambassador slams Russia and compares Ukraine crisis to Africa's colonial past
 
 - yake5 : 0.06005158784842297
+
   yake5 best cosine: 0.2630507988611436, index: 73, result: 2
+
   Generated: Amazon Prime Video Fast Facts A Fast Facts For The Week
+  
   Actual: Amazon's going to Nollywood -- and its deals with studios could shake up one of the world's most prolific filmmaking hubs
 
 Best average result (6.01% similar )
