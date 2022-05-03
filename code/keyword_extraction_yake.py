@@ -24,7 +24,7 @@ y3 = open('data/yake3.json', 'w', encoding='utf-8')
 y5 = open('data/yake5.json', 'w', encoding='utf-8')
 
 
-with open('data/CNN_Articels_clean.csv', newline='', encoding='utf-8') as csvfile:
+with open('../corpus_data/CNN_Articels_clean.csv', newline='', encoding='utf-8') as csvfile:
     reader = list(csv.DictReader(csvfile))
     for row in tqdm(reader):
         if row["Category"] == 'news':

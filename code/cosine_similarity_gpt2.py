@@ -10,7 +10,7 @@ import ijson
 tfidf_vectorizer = TfidfVectorizer(analyzer="word")
 datafiles = ['yake1', 'yake3', 'yake5']
 
-output_file = open('results_gpt2.txt', 'w', encoding='utf-8')
+output_file = open('../outputs/results/results_gpt2.txt', 'w', encoding='utf-8')
 
 for datafile in datafiles:
     total = 0
@@ -18,13 +18,10 @@ for datafile in datafiles:
     best_index = 0
     best_cosine = 0
     best_result = i
-    with open('data/test_titles.json') as json_file:
+    with open('../corpus_data/test_titles.json') as json_file:
         key = json.load(json_file)
-        if datafile == 'yake5':
-            k = dict(list(key.items())[:20])
-        else:
-            k = dict(list(key.items()))
-        with open(f'gpt2data/{datafile}_output.csv', 'r', encoding='utf-8') as f:
+        k = dict(list(key.items())[:20])
+        with open(f'../outputs/gpt2/{datafile}_output.csv', 'r', encoding='utf-8') as f:
             data = f.readlines()
             for line in data:
                 d = line.strip().split(',')

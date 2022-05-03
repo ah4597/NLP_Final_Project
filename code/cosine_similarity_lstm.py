@@ -10,7 +10,7 @@ import ijson
 tfidf_vectorizer = TfidfVectorizer(analyzer="word")
 datafiles = ['yake1', 'yake3', 'yake5']
 
-output_file = open('results_lstm.txt', 'w', encoding='utf-8')
+output_file = open('../outputs/results/results_lstm.txt', 'w', encoding='utf-8')
 
 for datafile in datafiles:
     total = 0
@@ -18,9 +18,9 @@ for datafile in datafiles:
     best_index = 0
     best_cosine = 0
     best_result = i
-    with open('data/test_titles.json') as json_file2:
+    with open('../corpus_data/test_titles.json') as json_file2:
         key = json.load(json_file2)
-        parser = ijson.parse(open(f'data/{datafile}_output.json'))
+        parser = ijson.parse(open(f'../outputs/lstm/{datafile}_output.json'))
         
         index = 0
         data = []
