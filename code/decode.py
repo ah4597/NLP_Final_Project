@@ -1,5 +1,20 @@
 import json
 import ijson
+import sys
+
+if len(sys.argv) != 1 or len(sys.argv) != 2:
+    print("Incorrect usage. To run: 'python decode.py <int>'. Int is top number to get. Default is 5 (if run with no additional parameters).")
+    exit()
+
+top_num = 5
+if len(sys.argv) == 1:
+    print('No additional parameters, running for default top 5.')
+elif len(sys.argv) == 2:
+    if sys.argv[1].isnumeric():
+        top_num = int(sys.argv[1])
+    else:
+        print("Incorrect usage. To run: 'python decode.py <int>'. Int is top number to get. Default is 5 (if run with no additional parameters).")
+        exit()
 
 
 datafiles = ['yake1', 'yake3', 'yake5']
@@ -54,7 +69,7 @@ decode = {
     ]
 }
 for folder in ['lstm', 'gpt2']:
-    output = open(f'../outputs/results/top_5_{folder}.txt', 'w', encoding='utf-8')
+    output = open(f'../outputs/results/top_{top_num}_{folder}.txt', 'w', encoding='utf-8')
     original_titles = json.load(open('../corpus_data/test_titles.json', encoding='utf-8'))
     for datafile in datafiles:
         output.write(f'{translation[datafile]}\n')
