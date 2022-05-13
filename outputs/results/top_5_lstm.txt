@@ -1,0 +1,70 @@
+Keyword of length 1
+Original Title: Skin whitening: What is it, what are the risks and who profits?
+Best Results: Skin Whitening What Is What We Need To Know About The
+Cosine: 0.49630705945783515
+
+Original Title: Hong Kong is sticking to zero-Covid, no matter what the cost
+Best Results: Hong Kong Is Sticking In The Us And The Aclu Of
+Cosine: 0.3868951156441445
+
+Original Title: What to know about the mass killings of Armenians a century ago
+Best Results: Genocide To Speed What You Need To Know About The Pandemic
+Cosine: 0.37225238290332247
+
+Original Title: Can the royal family survive after the Queen? Harry and Meghan's interview reignites the debate
+Best Results: Interview Is The Hottest Moment Of The World And The World
+Cosine: 0.3702568650509892
+
+Original Title: The West's historic drought in 3 maps
+Best Results: Drought In The Next Trial Of The Sea Are Getting A
+Cosine: 0.37011287544582205
+
+
+
+Keyphrase of length 3
+Original Title: John Major Fast Facts 
+Best Results: Sir John Major Russia Fast Facts In The Us And A Man Of
+Cosine: 0.5448954693228305
+
+Original Title: Want to be an astronaut? The European Space Agency is hiring for the first time in 11 years
+Best Results: European Space Agency Peng Shuai Is The First Light For The Country In
+Cosine: 0.5303652344294485
+
+Original Title: Leymah Gbowee: The people have awoken, we need to make the most of this moment 
+Best Results: Leymah Gbowee The World And The Most Of 500 People Bike The
+Cosine: 0.5052568105313082
+
+Original Title: Archaeologists recover victims of the Spanish Civil War
+Best Results: Spanish Civil War Is A First State Of The Year Of The New
+Cosine: 0.4840490271595034
+
+Original Title: French politician Olivier Dassault dies in helicopter crash
+Best Results: French Politician Olivier Dassault Dies After Terror Attack Suspect In A Pittsburgh Incident
+Cosine: 0.44779752785327154
+
+
+
+Keyphrase of length 5
+Original Title: Leymah Gbowee: The people have awoken, we need to make the most of this moment 
+Best Results: Leymah Gbowee The World And The Most Of 500 People Bike The
+Cosine: 0.49958147679900644
+
+Original Title: French politician Olivier Dassault dies in helicopter crash
+Best Results: French Politician Olivier Dassault Dies After Terror Attack Suspect In A Pittsburgh Incident That
+Cosine: 0.4688757007858698
+
+Original Title: 2016 CNN Hero of the Year: 
+Dreaming is worth it
+Best Results: Hero Of The Year Of The World Is A New Chance Of The Year
+Cosine: 0.4462427393437521
+
+Original Title: Skin whitening: What is it, what are the risks and who profits?
+Best Results: Skin Whitening What Is What We Need To Know About The Pandemic
+Cosine: 0.42484324949588537
+
+Original Title: How Trump became 'the white affirmative action president'
+Best Results: Trump As An Affirmative Action Became The World And The Us Has Died In The
+Cosine: 0.39765429372344135
+
+
+

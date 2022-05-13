@@ -1,0 +1,69 @@
+Keyword of length 1
+Original Title: Why are coups making a comeback in Africa? 
+Best Results: Africa Fast FactsIn Angola, Women Are Treated Like
+Cosine: 0.19720980713320327
+
+Original Title: This swarm of robots gets smarter the more it works
+Best Results: Robots $60 Million Worth Of Covid-
+Cosine: 0.18234940215907725
+
+Original Title: Seven children killed in airstrike by Nigerian forces in Niger, official says
+Best Results: Nigerian President Woos Protesters In Palace
+Cosine: 0.17466696474795906
+
+Original Title: African nations condemn reports of racism against students at Ukrainian border
+Best Results: African Asylum Seeker In SwedenMedical Staff To Arrive At
+Cosine: 0.14404089321633456
+
+Original Title: Seven children killed in airstrike by Nigerian forces in Niger, official says
+Best Results:  Cnn Reports,Nigerian President'S Ex-Fianca Details Life In
+Cosine: 0.13491027104118425
+
+
+
+Keyphrase of length 3
+Original Title: Kenya's UN ambassador slams Russia and compares Ukraine crisis to Africa's colonial past
+Best Results: Russia Invades Ukraine To 'Hijack' Key Institutions
+Cosine: 0.2106062151683532
+
+Original Title: Opibus: The mobility startup converting Kenya to electric vehicles
+Best Results: Kenya'S Ambassador To Uk DiesDolphins May Have
+Cosine: 0.1818432159745451
+
+Original Title: Ethiopia pledges action after video shows uniformed men burning civilians alive
+Best Results: Ethiopia Government Communication Office Cancels Messages Sent After Dagestan Clashes
+Cosine: 0.13505421969275536
+
+Original Title: William Hurt, actor known for 'Body Heat' and 'Kiss of the Spider Woman,' dies 
+Best Results: William Hurt, Who Once Said He'D Kill Hitler
+Cosine: 0.1269330902851618
+
+Original Title: Media coverage of Ukraine shows it's time to rethink what we know about Africa
+Best Results: Africa First Woman To Hold International PostUk Police Arrest
+Cosine: 0.1238831642572425
+
+
+
+Keyphrase of length 5
+Original Title: Kenya's UN ambassador slams Russia and compares Ukraine crisis to Africa's colonial past
+Best Results: Photo From The Ukrainian Base Of Mh17 The Base Is Just One Of
+Cosine: 0.2106062151683532
+
+Original Title: Opibus: The mobility startup converting Kenya to electric vehicles
+Best Results: Opibus' Revenue Stream Projected To Grow To $1.
+Cosine: 0.1818432159745451
+
+Original Title: Ethiopia pledges action after video shows uniformed men burning civilians alive
+Best Results: Perpetrators After A Video Shows Muslim Teen Kissing Muslim DadThe New Threat
+Cosine: 0.13505421969275536
+
+Original Title: William Hurt, actor known for 'Body Heat' and 'Kiss of the Spider Woman,' dies 
+Best Results: Kiss Of The Spider'Why Are They Here?'Why I
+Cosine: 0.1269330902851618
+
+Original Title: Media coverage of Ukraine shows it's time to rethink what we know about Africa
+Best Results: Within And About AfricaUk Launches Anti-Missile System As Ukraine
+Cosine: 0.1238831642572425
+
+
+

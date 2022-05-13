@@ -1,3 +1,5 @@
+## OLD __ OUT OF USE
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
@@ -18,6 +20,7 @@ for datafile in datafiles:
     best_index = 0
     best_cosine = 0
     best_result = i
+    all_cosines = []
     with open('../corpus_data/test_titles.json') as json_file:
         key = json.load(json_file)
         k = dict(list(key.items())[:20])
@@ -40,8 +43,12 @@ for datafile in datafiles:
                             best_index = index
                             best_result = j
                         total += nested
+                        all_cosines.append((nested, index, j))
                         
     average_cosine = total/i
+    top_5_cosines = sorted(all_cosines, key=lambda item: item[0], reverse=True)[:5]
+    for cosine, index, j in top_5_cosines:
+        output_file.write(f'({cosine}, {index}, {j})\n')
     print(f'Average cosine for {datafile}: {average_cosine}')
     output_file.write(f'{datafile} : {average_cosine}\n')
     output_file.write(f'{datafile} best cosine: {best_cosine}, index: {best_index}, result: {best_result}\n')
